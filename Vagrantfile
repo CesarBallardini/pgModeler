@@ -52,7 +52,17 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
  config.vm.define HOSTNAME do |srv|
 
-    srv.vm.box = "ubuntu/noble64"
+    ## 
+    # https://discourse.ubuntu.com/t/ubuntu-24-04-lts-noble-numbat-release-notes/39890#vagrant
+    # Starting in Ubuntu 24.04, Canonical no longer produces Vagrant images.
+    # This is due upstream Debian questions of maintainership and Canonical dropping vagrant from the Ubuntu archives.
+    # The code to generate Vagrant images will remain in livecd-rootfs for reference, 
+    # and for future inclusion when / if Canonical are able to work on a support model.
+    # Documentation regarding creating an Ubuntu Base Image from scratch is provided 
+    # at https://documentation.ubuntu.com/public-images/en/latest/public-images-how-to/build-vagrant-with-bartender/
+    #
+    #srv.vm.box = "ubuntu/noble64"
+    srv.vm.box = "ubuntu/mantic64"
 
     srv.vm.network :private_network, ip: HOST_IP_ADDRESS
 #    config.vm.network "forwarded_port", guest_ip: "127.0.0.1", guest: 8080, host: 8080
