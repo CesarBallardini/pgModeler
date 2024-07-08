@@ -10,8 +10,6 @@ HOST_IP_ADDRESS="192.168.11.10"
 DOMAIN="virtual.ballardini.com.ar"
 VM_NUM_CPUS=3
 VM_RAM="4096"
-VM_NUM_CPUS=6
-VM_RAM="8192"
 
 
 $msg = <<MSG
