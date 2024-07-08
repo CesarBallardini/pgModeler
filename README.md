@@ -39,7 +39,7 @@ vagrant ssh -c /usr/local/bin/pgmodeler
 
 This was tested using Ubuntu 22.04.4 (2024-07-07):
 
-* Virtualbox 7.0.18-162988~Ubuntu~jammy
+* Virtualbox `7.0.18-162988~Ubuntu~jammy`
 * Vagrant 2.4.1-1
 * Vagrant plugins: 
   * vagrant-cachier 1.2.1
