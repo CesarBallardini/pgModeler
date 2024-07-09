@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+PGMODELER_VERSION=1.1.3
+PGMODELER_TAG=pgmodeler:${PGMODELER_VERSION}
+
 run() {
   docker run \
     --rm \
@@ -9,7 +12,7 @@ run() {
     -v $HOME/.Xauthority:/root/.Xauthority \
     -v ./data/root:/root \
     -v ./data/usr/local/lib/docker-pgmodeler/plugins:/usr/local/lib/docker-pgmodeler/plugins \
-    pgmod
+    ${PGMODELER_TAG}
 }
 
 run
