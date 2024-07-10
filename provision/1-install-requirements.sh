@@ -11,6 +11,6 @@ sudo apt-get install postgresql ${APT_OPTIONS}
 sudo apt-get install libqt6svg6 libpq-dev libxext-dev ${APT_OPTIONS}
 
 # requisites for building
-sudo apt-get install make g++ libxml2-dev pkg-config ${APT_OPTIONS}
+sudo apt-get install make g++ libxml2-dev pkg-config libgl1-mesa-dev ${APT_OPTIONS}
 sudo apt-get install qt6-base-dev libqt6svg6-dev qt6-tools-dev qmake6 ${APT_OPTIONS}
 
