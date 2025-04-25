@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PGMODELER_VERSION=1.1.3
+PGMODELER_VERSION=1.1.6
 PGMODELER_TAG=pgmodeler:${PGMODELER_VERSION}
 
 build() {

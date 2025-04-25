@@ -8,16 +8,16 @@
 git clone https://github.com/CesarBallardini/pgModeler.git
 ```
 
-* You can set the version of the program to build in `build-image.sh`. The builder will work for pgModeler versions that uses Qt6.  You need to change the variable like:
+* You can set the version of the program to build in `build-container.sh`. The builder will work for pgModeler versions that uses Qt6.  You need to change the variable like:
 
 ```bash
-PGMODELER_VERSION="1.1.3"
+PGMODELER_VERSION="1.1.6"
 ````
 
 * Build the image
 
 ```bash
-./build-image.sh
+./build-container.sh
 # it took 30 minutes approx.
 ```
 
